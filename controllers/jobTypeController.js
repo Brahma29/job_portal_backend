@@ -48,7 +48,7 @@ exports.updateJobType = async (req, res, next) => {
   }
 };
 
-//Delete job type
+//Delete job type by id
 exports.deleteJobType = async (req, res, next) => {
   try {
     await JobType.findOneAndRemove(req.params.id);
