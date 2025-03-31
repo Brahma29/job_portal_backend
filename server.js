@@ -3,10 +3,10 @@ const app = express();
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-require('dotenv').config();
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const errorHandler = require('./middlewares/error');
+require('dotenv').config();
 
 //routes import
 const authRoutes = require('./routes/authRoutes');
